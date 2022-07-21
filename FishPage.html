@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+
+    <!-- CSS icons only -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
+    />
+
+    <link rel="icon" type="image/x-icon" href="./images/PetCornerIcon.svg" />
+
+    <link rel="stylesheet" href="./css/fishpage.css" />
+
+    <title>Pet Corner-Fishes</title>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar sticky-top navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html" id="home"
+          ><img
+            src="./images/PetCornerLogoAsset.svg"
+            style="width: 125px; margin: 0"
+            alt="pet-corner-logo"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="dogDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <strong>Dogs</strong>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="dogDropdown">
+                <li>
+                  <a class="dropdown-item" href="./DogsPage.html#largeBreeds"
+                    >Large Breeds</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./DogsPage.html#smallBreeds"
+                    >Small Breeds</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="catDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <strong>Cats</strong>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="catDropdown">
+                <li>
+                  <a class="dropdown-item" href="./CatsPage.html#longFur"
+                    >Long Fur</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./CatsPage.html#shortFur"
+                    >Short Fur</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="fishDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <strong>Fishes</strong>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="fishDropdown">
+                <li>
+                  <a class="dropdown-item" href="./FishPage.html">Small Fish</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="petfoodDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <strong>Pet foods</strong>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="petfoodDropdown">
+                <li>
+                  <a class="dropdown-item" href="./petfoods.html#dogFood"
+                    >Dog Food</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./petfoods.html#catFood"
+                    >Cat Food</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="./petfoods.html#otherFood"
+                    >Others</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#aboutus"
+                ><strong>About Us</strong></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html#contactus"
+                ><strong>Contact Us</strong></a
+              >
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-dark" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Fish Choices -->
+
+    <!-- Small Fishes -->
+    <header>
+      <div id="smallFish"></div>
+      <div class="container my-5 py-3 text-center">
+        <h2><strong>Fish</strong></h2>
+        <p>
+          From their brightly colored, shiny scales to their relatively easy
+          care, aquarium fish are popular as pets. In fact, millions of
+          households in the United States keep aquarium fish. Fish are great
+          pets for people with pet allergies and have shown to produce calming
+          effects and to reduce stress among people who keep them.
+        </p>
+      </div>
+    </header>
+    <main>
+      <div class="container my-5 py-3 rounded-3">
+        <div class="row fishPagebg">
+          <h2>Small Fishes</h2>
+          <p>
+            Small aquarium fishes tend to gather in groups called "school". They
+            are very relaxing to watch as they move gracefully inside the
+            aquarium.
+          </p>
+          <div class="container my-3">
+            <div class="row row-cols-1 g-3">
+              <div class="col">
+                <div class="card smallFishes">
+                  <img
+                    id="goldfish"
+                    src="./images/Goldfish.png"
+                    class="card-img-top smallFishesImage"
+                    alt="Gold Fish"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Goldfish</h5>
+                    <p class="card-text">
+                      Goldfish are a hardy aquatic species. They can deal with
+                      temperature fluctuations, changes in pH, cloudy water, and
+                      even low dissolved oxygen levels.
+                      <br /><br />
+                      <strong>Price: $2.00</strong> <br />
+                    </p>
+
+                    <form class="my-3">
+                      <label for="goldfishQty">Quantity</label>
+                      <input
+                        type="number"
+                        id="goldfishQty"
+                        name="goldfishQty"
+                        min="1"
+                        max="99"
+                      />
+                    </form>
+
+                    <a href="./checkoutform.html" class="btn btn-danger">Buy</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card smallFishes">
+                  <img
+                    id="angelfish"
+                    src="./images/Angelfish.png"
+                    class="card-img-top smallFishesImage"
+                    alt="Angelfish"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Angelfish</h5>
+                    <p class="card-text">
+                      Admired for their graceful swimming behavior, angelfish
+                      make stunning additions to large community aquariums.
+                      <br /><br />
+                      <strong>Price: $3.00</strong> <br />
+                    </p>
+
+                    <form class="my-3">
+                      <label for="AngelfishQty">Quantity</label>
+                      <input
+                        type="number"
+                        id="AngelfishQty"
+                        name="AngelfishQty"
+                        min="1"
+                        max="99"
+                      />
+                    </form>
+
+                    <a href="./checkoutform.html" class="btn btn-danger">Buy</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container-fluid footerarea">
+        <div class="row">
+          <div class="col-md-6 my-3">
+            <h4>Get Subscribed</h4>
+            <p>
+              Subscribe to get the latest information and be the first to know
+              the latest news and promos.
+            </p>
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Email Address"
+              />
+              <div class="input-group-append">
+                <button class="btn btn-dark" type="submit">Subscribe</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 my-3">
+            <h4>Help</h4>
+            <div>
+              <ul>
+                <li><a href="#">FAQs</a></li>
+
+                <li><a href="#">Privacy</a></li>
+
+                <li><a href="#">Terms of Service</a></li>
+
+                <li><a href="#">Affiliated Veterinarians</a></li>
+
+                <li><a href="#">Affiliated Pet Clinics</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="copyright">&copy; Pet Corner 2022</p>
+    </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

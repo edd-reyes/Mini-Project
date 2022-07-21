@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: whitesmoke;
+}
+
+header {
+  background-color: white;
+}
+h2 {
+  padding-top: 30px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+h3,
+h5 {
+  font-weight: bold;
+  font-family: "Bebas Neue", cursive;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+}
+
+nav {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 137, 90, 1) 26%,
+    rgba(255, 0, 0, 1) 100%
+  );
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.petFoodPagebg {
+  background-color: rgb(254, 243, 230);
+  border-radius: 10px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  margin-top: auto;
+}
+
+.petFoods {
+  flex-direction: row;
+}
+
+.petFoodsImage {
+  flex-direction: row;
+  width: 30%;
+  aspect-ratio: 1/1;
+}
+
+@media screen and (max-width: 540px) {
+  .petFoodsImage {
+    flex-direction: row;
+    width: 50%;
+    aspect-ratio: 1/1;
+  }
+}
+
+.footerarea {
+  background-color: rgba(230, 230, 230);
+  border-top: 5px solid orangered;
+}
+
+.petFoodPagebg img:hover {
+  transform: scale(1.05);
+  transition: 0.2s;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.copyright {
+  text-align: center;
+  padding: 10px;
+}
+
+.btn:hover {
+  background-color: orangered;
+}

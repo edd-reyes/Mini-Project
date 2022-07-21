@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+
+    <!-- CSS icons only -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
+    />
+
+    <link rel="icon" type="image/x-icon" href="./images/PetCornerIcon.svg" />
+
+    <link rel="stylesheet" href="./css/petfoodpage.css" />
+
+    <title>Pet Corner-Pet Food</title>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar sticky-top navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html" id="home"
+          ><img
+            src="./images/PetCornerLogoAsset.svg"
+            style="width: 125px; margin: 0"
+            alt="pet-corner-logo"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="dogDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <strong>Dogs</strong>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="dogDropdown">
+                <li>
+                  <a class="dropdown-item" href="./DogsPage.html#largeBreeds"
+                    >Large Breeds</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./DogsPage.html#smallBreeds"
+                    >Small Breeds</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="catDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <strong>Cats</strong>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="catDropdown">
+                <li>
+                  <a class="dropdown-item" href="./CatsPage.html#longFur"
+                    >Long Fur</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./CatsPage.html#shortFur"
+                    >Short Fur</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="fishDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <strong>Fishes</strong>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="fishDropdown">
+                <li>
+                  <a class="dropdown-item" href="./FishPage.html">Small Fish</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="petfoodDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <strong>Pet foods</strong>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="petfoodDropdown">
+                <li>
+                  <a class="dropdown-item" href="./petfoods.html#dogFood"
+                    >Dog Food</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./petfoods.html#catFood"
+                    >Cat Food</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="./petfoods.html#otherFood"
+                    >Others</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#aboutus"
+                ><strong>About Us</strong></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html#contactus"
+                ><strong>Contact Us</strong></a
+              >
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-dark" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Pet foods -->
+
+    <!-- Dog Foods -->
+    <header>
+      <div id="dogFood"></div>
+      <div class="container mb-5 py-3 text-center">
+        <h2><strong>Pet Foods</strong></h2>
+        <p>
+          Pet food is a specialty food for domesticated animals that is
+          formulated according to their nutritional needs. Pet food generally
+          consists of meat, meat byproducts, cereals, grain, vitamins, and
+          minerals.
+        </p>
+      </div>
+    </header>
+    <main>
+      <div class="container my-5 py-3 rounded-3">
+        <div class="row petFoodPagebg">
+          <h2>Dog Food</h2>
+          <p>
+            Quality dog food made from the finest ingredients to assure your
+            dogs are healthy and in tip-top shape.
+          </p>
+          <div class="container my-3">
+            <div class="row row-cols-1 g-3">
+              <div class="col">
+                <div class="card petFoods">
+                  <img
+                    id="pedigree"
+                    src="./images/Pedigree.png"
+                    class="card-img-top petFoodsImage"
+                    alt="Pedigree"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Pedigree (25kg)</h5>
+                    <p class="card-text">
+                      PEDIGREE® makes really good food for dogs: explore
+                      nutritionally balanced wet, dry, puppy, and senior dog
+                      food.
+                      <br /><br />
+                      <strong>Price: $40.00</strong>
+                    </p>
+                    <form class="my-3">
+                      <label for="PedigreeQty">Quantity</label>
+                      <input
+                        type="number"
+                        id="PedigreeQty"
+                        name="PedigreeQty"
+                        min="1"
+                        max="99"
+                      />
+                    </form>
+
+                    <a href="./checkoutform.html" class="btn btn-danger">Buy</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card petFoods">
+                  <img
+                    id="cesar"
+                    src="./images/Cesar.png"
+                    class="card-img-top petFoodsImage"
+                    alt="Cesar"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Cesar (5kg)</h5>
+                    <p class="card-text">
+                      Try our New CESAR FRESH CHEF™ Wet Dog Food ... Made with
+                      the same human-grade ingredients you'd feed yourself,
+                      these culinary-inspired rolls are sure to keep your dogs
+                      healthy and fit.
+                      <br /><br />
+                      <strong>Price: $7.50</strong>
+                    </p>
+                    <form class="my-3">
+                      <label for="CesarQty">Quantity</label>
+                      <input
+                        type="number"
+                        id="CesarQty"
+                        name="CesarQty"
+                        min="1"
+                        max="99"
+                      />
+                    </form>
+
+                    <a href="./checkoutform.html" class="btn btn-danger">Buy</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cat Food -->
+      <hr id="catFood" />
+      <div class="container my-5 py-3 rounded-3">
+        <div class="row petFoodPagebg">
+          <h2>Cat Food</h2>
+          <p>
+            Finest quality cat food made from the best ingredients to assure
+            your cats are healthy and fit.
+          </p>
+          <div class="container my-3">
+            <div class="row row-cols-1 g-3">
+              <div class="col">
+                <div class="card petFoods">
+                  <img
+                    id="whiskas"
+                    src="./images/Whiskas.png"
+                    class="card-img-top petFoodsImage"
+                    alt="Whiskas"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Whiskas (1kg)</h5>
+                    <p class="card-text">
+                      Whiskas range offers delicious meals specially formulated
+                      to give your cat the diet<br /><br />
+                      <strong>Price: $5.00</strong>
+                    </p>
+                    <form class="my-3">
+                      <label for="WhiskasQty">Quantity</label>
+                      <input
+                        type="number"
+                        id="WhiskasQty"
+                        name="WhiskasQty"
+                        min="1"
+                        max="99"
+                      />
+                    </form>
+
+                    <a href="./checkoutform.html" class="btn btn-danger">Buy</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card petFoods">
+                  <img
+                    id="goodest"
+                    src="./images/Goodest.png"
+                    class="card-img-top petFoodsImage"
+                    alt="Goodest"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Goodest (85g)</h5>
+                    <p class="card-text">
+                      vet-formulated wet cat food is filled with quality
+                      ingredients and immunity-boosting Vitamin E for your fave
+                      kitties.<br /><br />
+                      <strong>Price: $1.00</strong>
+                    </p>
+                    <form class="my-3">
+                      <label for="GoodestQty">Quantity</label>
+                      <input
+                        type="number"
+                        id="GoodestQty"
+                        name="GoodestQty"
+                        min="1"
+                        max="99"
+                      />
+                    </form>
+
+                    <a href="./checkoutform.html" class="btn btn-danger">Buy</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Other Food -->
+      <hr id="otherFood" />
+      <div class="container my-5 py-3 rounded-3">
+        <div class="row petFoodPagebg">
+          <h2>Fish Food</h2>
+          <p>
+            Contains live-feed in form of pellets or flakes, perfect for
+            aquarium fishes.
+          </p>
+          <div class="container my-3">
+            <div class="row row-cols-1 g-3">
+              <div class="col">
+                <div class="card petFoods">
+                  <img
+                    id="prima"
+                    src="./images/Prima.png"
+                    class="card-img-top petFoodsImage"
+                    alt="Prima"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Prima (500g)</h5>
+                    <p class="card-text">
+                      A complete food for mid-water and bottom-feeding fish,
+                      such as Discus, Goldfish, Angelfish, barbs, catfish, and
+                      loach. The slow-sinking granules allow fish to feed
+                      naturally.<br /><br />
+                      <strong>Price: $2.00</strong>
+                    </p>
+                    <form class="my-3">
+                      <label for="PrimaQty">Quantity</label>
+                      <input
+                        type="number"
+                        id="PrimaQty"
+                        name="PrimaQty"
+                        min="1"
+                        max="99"
+                      />
+                    </form>
+
+                    <a href="./checkoutform.html" class="btn btn-danger">Buy</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container-fluid footerarea">
+        <div class="row">
+          <div class="col-md-6 my-3">
+            <h4>Get Subscribed</h4>
+            <p>
+              Subscribe to get the latest information and be the first to know
+              the latest news and promos.
+            </p>
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Email Address"
+              />
+              <div class="input-group-append">
+                <button class="btn btn-dark" type="submit">Subscribe</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 my-3">
+            <h4>Help</h4>
+            <div>
+              <ul>
+                <li><a href="#">FAQs</a></li>
+
+                <li><a href="#">Privacy</a></li>
+
+                <li><a href="#">Terms of Service</a></li>
+
+                <li><a href="#">Affiliated Veterinarians</a></li>
+
+                <li><a href="#">Affiliated Pet Clinics</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="copyright">&copy; Pet Corner 2022</p>
+    </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

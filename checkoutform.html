@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pet Corner-Checkout</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+
+    <!-- CSS icons only -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
+    />
+
+    <link rel="icon" type="image/x-icon" href="./images/PetCornerIcon.svg" />
+
+    <link rel="stylesheet" href="./css/checkoutform.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar sticky-top navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html" id="home"
+          ><img
+            src="./images/PetCornerLogoAsset.svg"
+            style="width: 125px; margin: 0"
+            alt="pet-corner-logo"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="dogDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <strong>Dogs</strong>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="dogDropdown">
+                <li>
+                  <a class="dropdown-item" href="./DogsPage.html#largeBreeds"
+                    >Large Breeds</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./DogsPage.html#smallBreeds"
+                    >Small Breeds</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="catDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <strong>Cats</strong>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="catDropdown">
+                <li>
+                  <a class="dropdown-item" href="./CatsPage.html#longFur"
+                    >Long Fur</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./CatsPage.html#shortFur"
+                    >Short Fur</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="fishDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <strong>Fishes</strong>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="fishDropdown">
+                <li>
+                  <a class="dropdown-item" href="./FishPage.html">Small Fish</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="petfoodDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <strong>Pet foods</strong>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="petfoodDropdown">
+                <li>
+                  <a class="dropdown-item" href="./petfoods.html#dogFood"
+                    >Dog Food</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./petfoods.html#catFood"
+                    >Cat Food</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="./petfoods.html#otherFood"
+                    >Others</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#aboutus"
+                ><strong>About Us</strong></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html#contactus"
+                ><strong>Contact Us</strong></a
+              >
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-dark" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Company Logo -->
+    <div class="container">
+      <div class="py-3 text-center">
+        <img
+          class="mb-4 d-block mx-auto"
+          src="./images/PetCornerLogoAsset.svg"
+          alt="Pet Corner"
+          height="125"
+        />
+        <h2>Check out Form</h2>
+        <p class="lead">
+          You are a few steps away from completing the transaction. <br />
+          Please fill-out the form below.
+        </p>
+      </div>
+    </div>
+
+    <!-- Billing Statement -->
+    <div class="container">
+      <h4 class="mb-3">Billing Address</h4>
+      <form novalidate>
+        <!-- Names -->
+        <div class="row g-3">
+          <!-- First Name -->
+          <div class="col-sm-6">
+            <label for="firstName" class="form-label">First Name</label>
+            <input
+              type="text"
+              id="firstName"
+              class="form-control"
+              placeholder="First Name"
+              required
+            />
+            <div class="invalid-feedback">Valid first name is required</div>
+          </div>
+
+          <!-- Last Name -->
+          <div class="col-sm-6">
+            <label for="lastName" class="form-label">Last Name</label>
+            <input
+              type="text"
+              id="lastName"
+              class="form-control"
+              placeholder="Last Name"
+              required
+            />
+            <div class="invalid-feedback">Valid last name is required</div>
+          </div>
+
+          <!-- Username -->
+          <div class="col-12">
+            <label for="address" class="form-label">Address</label>
+            <input
+              type="text"
+              id="address"
+              class="form-control"
+              placeholder="Street No. / Home No."
+              required
+            />
+            <div class="invalid-feedback">Address is required</div>
+          </div>
+
+          <!-- Province -->
+          <div class="col-md-5">
+            <label for="province" class="form-label">Province</label>
+            <select id="province" class="form-control">
+              <option value="" disabled selected>Choose...</option>
+              <option value="Batangas">Batangas</option>
+              <option value="Laguna">Laguna</option>
+              <option value="Quezon">Quezon</option>
+            </select>
+
+            <div class="invalid-feedback">Province is required</div>
+          </div>
+
+          <!-- City -->
+          <div class="col-md-4">
+            <label for="city" class="form-label">City</label>
+            <select id="city" class="form-control">
+              <option value="" selected disabled>Choose...</option>
+              <option value="Lipa">Lipa</option>
+              <option value="Calamba">Calamba</option>
+              <option value="Candelaria">Candelaria</option>
+            </select>
+
+            <div class="invalid-feedback">City is required</div>
+          </div>
+
+          <!-- Zip Code -->
+          <div class="col-md-3">
+            <label for="zipcode" class="form-label">Zip code</label>
+            <input
+              type="number"
+              id="zipcode"
+              class="form-control"
+              placeholder="1234"
+              required
+            />
+            <div class="invalid-feedback">Zip code is required</div>
+          </div>
+
+          <hr class="my-4" />
+
+          <!-- Shipping Address -->
+          <div class="col-12">
+            <div class="form-check">
+              <input
+                id="sameAddress"
+                type="checkbox"
+                class="form-check-input"
+              />
+              <label class="form-check-label" for="sameAddress"
+                >Shipping Address is the same as billing</label
+              >
+            </div>
+            <div class="form-check">
+              <input id="saveInfo" type="checkbox" class="form-check-input" />
+              <label class="form-check-label" for="saveInfo"
+                >Save this info</label
+              >
+            </div>
+          </div>
+
+          <hr class="my-4" />
+
+          <!-- Payment Method -->
+          <h4 class="mb-3">Payments</h4>
+          <!-- Cash on Delivery -->
+          <div class="form-check">
+            <input
+              type="radio"
+              class="form-check-input"
+              id="cod"
+              name="paymentMethod"
+              required
+              checked
+              onclick="toggleTextCod()"
+            />
+            <label for="cod">Cash on Delivery</label>
+          </div>
+          <!-- Credit Card -->
+          <div class="form-check">
+            <input
+              type="radio"
+              class="form-check-input"
+              id="creditCard"
+              name="paymentMethod"
+              required
+              onclick="toggleText()"
+            />
+            <label for="creditCard">Credit Card</label>
+          </div>
+
+          <!-- PayPal -->
+          <div class="form-check">
+            <input
+              type="radio"
+              class="form-check-input"
+              id="payPal"
+              name="paymentMethod"
+              required
+              onclick="toggleText()"
+            />
+            <label for="payPal">PayPal</label>
+          </div>
+
+          <!-- Card Info -->
+          <div class="row my-3 gy-3" id="cardInfo" style="display: none">
+            <!-- Full Name -->
+            <div class="col-md-6">
+              <label for="fullName" class="form-label">Name on card</label>
+              <input type="text" class="form-control" id="fullName" />
+              <small class="text-muted">Full name as displayed on card</small>
+              <div class="invalid-feedback">Name on card is required</div>
+            </div>
+            <div class="col-md-6">
+              <label for="cc-number" class="form-label"
+                >Credit Card Number</label
+              >
+              <input type="number" class="form-control" id="cc-number" />
+              <div class="invalid-feedback">Credit card number is required</div>
+            </div>
+
+            <!-- Expiration -->
+            <div class="col-md-3">
+              <label for="cc-expire">Expiration</label>
+              <input type="number" class="form-control" id="cc-expire" />
+              <div class="invalid-feedback">Expiration is required</div>
+            </div>
+
+            <!-- CVV -->
+            <div class="col-md-3">
+              <label for="cc-cvv">CVV</label>
+              <input type="number" class="form-control" id="cc-cvv" />
+              <div class="invalid-feedback">CVV is required</div>
+            </div>
+          </div>
+        </div>
+
+        <hr class="my-4" />
+
+        <!-- Button -->
+        <div class="row-cols-1 my-3">
+          <button class="btn btn-outline-success btn-lg" type="button">
+            Check out
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/checkoutform.js"></script>
+  </body>
+</html>

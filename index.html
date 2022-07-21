@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+
+    <!-- CSS icons only -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
+    />
+
+    <link rel="icon" type="image/x-icon" href="./images/PetCornerIcon.svg" />
+
+    <link rel="stylesheet" href="./css/home.css" />
+
+    <title>Pet Corner-Home</title>
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar sticky-top navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html" id="home"
+          ><img
+            src="./images/PetCornerLogoAsset.svg"
+            style="width: 125px; margin: 0"
+            alt="pet-corner-logo"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="dogDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <strong>Dogs</strong>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="dogDropdown">
+                <li>
+                  <a class="dropdown-item" href="./DogsPage.html#largeBreeds"
+                    >Large Breeds</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./DogsPage.html#smallBreeds"
+                    >Small Breeds</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="catDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <strong>Cats</strong>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="catDropdown">
+                <li>
+                  <a class="dropdown-item" href="./CatsPage.html#longFur"
+                    >Long Fur</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./CatsPage.html#shortFur"
+                    >Short Fur</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="fishDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <strong>Fishes</strong>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="fishDropdown">
+                <li>
+                  <a class="dropdown-item" href="./FishPage.html">Small Fish</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="petfoodDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <strong>Pet foods</strong>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="petfoodDropdown">
+                <li>
+                  <a class="dropdown-item" href="./petfoods.html#dogFood"
+                    >Dog Food</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./petfoods.html#catFood"
+                    >Cat Food</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="./petfoods.html#otherFood"
+                    >Others</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#aboutus"
+                ><strong>About Us</strong></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html#contactus"
+                ><strong>Contact Us</strong></a
+              >
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-dark" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <header>
+      <!-- Pet Corner Logo -->
+      <div class="container-fluid text-center">
+        <div class="row">
+          <img
+            src="./images/PetCornerLogoAsset.svg"
+            style="width: 500px"
+            alt="Pet Corner Logo"
+            class="mx-auto p-3"
+          />
+        </div>
+      </div>
+      <!-- carousel photos -->
+      <div class="container my-3" id="carousel">
+        <div id="carouselPetCorner" class="carousel slide" data-bs-ride="true">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselPetCorner"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselPetCorner"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselPetCorner"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselPetCorner"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselPetCorner"
+              data-bs-slide-to="4"
+              aria-label="Slide 5"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="./images/cat-dog-banner.png"
+                class="d-block w-100"
+                alt="catDogBanner"
+              />
+            </div>
+            <div class="carousel-item">
+              <img src="./images/dogs.png" class="d-block w-100" alt="Dogs" />
+            </div>
+            <div class="carousel-item">
+              <img src="./images/cats.png" class="d-block w-100" alt="Cats" />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./images/fishesBanner.png"
+                class="d-block w-100 carousel"
+                alt="Fishes"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./images/petFoodBanner.png"
+                class="d-block w-100"
+                alt="Petfoods"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselPetCorner"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselPetCorner"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- selections -->
+      <div class="container my-5" id="selections">
+        <h3 style="text-align: center; padding: 20px; color: orangered">
+          What's in our Store
+        </h3>
+        <div
+          class="row row-cols-lg-4 row-cols-md-2 row-cols-1 p-2 g-3 storeSelection"
+        >
+          <div class="col text-center">
+            <div class="card h-100 selectionCards">
+              <img
+                id="selectionDogCards"
+                src="./images/dogs-banner.png"
+                class="card-img-top selectionCardsImage"
+                alt="dogs"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Dogs</h5>
+                <p class="card-text">
+                  Loyal, obedient, hardworking, intelligent, gentle, fond of
+                  human interaction and eager to please.
+                </p>
+                <a href="./DogsPage.html" class="btn btn-danger btnDnone"
+                  >Pick a Dog</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col text-center">
+            <div class="card h-100 selectionCards">
+              <img
+                id="selectionCatCards"
+                src="./images/cat-banner.png"
+                class="card-img-top selectionCardsImage"
+                alt="cats"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Cats</h5>
+                <p class="card-text">
+                  Intelligent, elegant, calming companions, capable of dealing
+                  with their own exercise and cleaning. Independent, cool and
+                  aloof.
+                </p>
+                <a href="./CatsPage.html" class="btn btn-danger btnDnone"
+                  >Pick a Cat</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col text-center">
+            <div class="card h-100 selectionCards">
+              <img
+                id="selectionFishesCards"
+                src="./images/fish.png"
+                class="card-img-top selectionCardsImage"
+                alt="fish"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Fishes</h5>
+                <p class="card-text">
+                  A great stress-reliever. Fish are known to have a calming
+                  effect on those watching them and just seeing them glide about
+                  the tank is a sure-fire way to lower your stress levels and
+                  create a more tranquil space in your home.
+                </p>
+                <a href="./FishPage.html" class="btn btn-danger btnDnone"
+                  >Pick a fish</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col text-center">
+            <div class="card h-100 selectionCards">
+              <img
+                id="selectionPetfoodsCards"
+                src="./images/petfoods.png"
+                class="card-img-top selectionCardsImage"
+                alt="petfood"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Pet Foods</h5>
+                <p class="card-text">
+                  A specialty food for domesticated animals that is formulated
+                  according to their nutritional needs.
+                </p>
+                <a href="petfoods.html" class="btn btn-danger btnDnone">Buy</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- top choices -->
+      <div class="container my-5" id="top-choices">
+        <h3 style="text-align: center; padding-top: 20px; color: orangered">
+          Top Choices
+        </h3>
+        <div class="row">
+          <div
+            class="row row-cols-1 row-cols-sm-1 row-cols-lg-4 row-cols-md-2 row-cols-xxl-5 g-3 mb-5 topChoices"
+          >
+            <div class="text-center">
+              <div class="card h-100 topChoicesCards">
+                <img
+                  src="./images/GoldenRetriever.png"
+                  class="card-img-top"
+                  alt="Golden Retriever"
+                  style="aspect-ratio: 1/1.2"
+                />
+                <div class="card-body" style="display: flex">
+                  <h5 class="card-title">Golden Retriever</h5>
+                  <p class="card-text">
+                    The Golden Retriever is a Scottish breed of retriever dog of
+                    medium size. It is characterised by a gentle and
+                    affectionate nature and a striking golden coat.
+                  </p>
+                  <a
+                    href="./DogsPage.html#goldenRetriever"
+                    class="btn btn-danger btnDnone"
+                    >Check it out</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-4 text-center">
+              <div class="card h-100 topChoicesCards">
+                <img
+                  src="./images/BorderCollie.png"
+                  class="card-img-top"
+                  alt="Border Collie"
+                  style="aspect-ratio: 1/1.2"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Border Collie</h5>
+                  <p class="card-text">
+                    Border Collies are highly intelligent and highly trainable
+                    and are superstars at canine activities such as herding,
+                    obedience, and agility.
+                  </p>
+                  <a
+                    href="./DogsPage.html#borderCollie"
+                    class="btn btn-danger btnDnone"
+                    >Check it out</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-4 text-center">
+              <div class="card h-100 topChoicesCards">
+                <img
+                  src="./images/PersianCat.png"
+                  class="card-img-top"
+                  alt="Persian Cat"
+                  style="aspect-ratio: 1.25/1.5"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Persian Cat</h5>
+                  <p class="card-text">
+                    The dignified and docile Persian cat is known for being
+                    quiet and sweet. Although Persians tend to be relaxed and
+                    easygoing, they also command an air of royalty.
+                  </p>
+                  <a
+                    href="./CatsPage.html#persian"
+                    class="btn btn-danger btnDnone"
+                    >Check it out</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-4 text-center">
+              <div class="card h-100 topChoicesCards">
+                <img
+                  src="./images/BritishShortHair.png"
+                  class="card-img-top"
+                  alt="British Short Hair"
+                  style="aspect-ratio: 1/1.2"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">British Short Hair</h5>
+                  <p class="card-text">
+                    The British shorthair cat is a medium-to-large-sized cat
+                    breed with a short, dense coat and a distinctive rounded
+                    head and face that make it look a lot like a cuddly teddy
+                    bear.
+                  </p>
+                  <a
+                    href="./CatsPage.html#britishShortHair"
+                    class="btn btn-danger btnDnone"
+                    >Check it out</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-4 text-center">
+              <div class="card h-100 topChoicesCards">
+                <img
+                  src="./images/Goldfish.png"
+                  class="card-img-top"
+                  alt="..."
+                  style="aspect-ratio: 1/1.2"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Goldfish</h5>
+                  <p class="card-text">
+                    Goldfish are a hardy aquatic species. They can deal with
+                    temperature fluctuations, changes in pH, cloudy water, and
+                    even low dissolved oxygen levels.
+                  </p>
+                  <a
+                    href="./FishPage.html#goldfish"
+                    class="btn btn-danger btnDnone"
+                    >Check it out</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-4 text-center">
+              <div class="card h-100 topChoicesCards">
+                <img
+                  src="./images/Angelfish.png"
+                  class="card-img-top"
+                  alt="Angelfish"
+                  style="aspect-ratio: 1/1.2"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Angelfish</h5>
+                  <p class="card-text">
+                    Admired for their graceful swimming behavior, angelfish make
+                    stunning additions to large community aquariums.
+                  </p>
+                  <a
+                    href="./FishPage.html#angelfish"
+                    class="btn btn-danger btnDnone"
+                    >Check it out</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- About Us -->
+      <hr style="border-bottom: 1px solid black" id="aboutus" />
+      <div class="container-fluid my-5 p-5 aboutUs">
+        <div class="row text-center">
+          <h3>About Us</h3>
+          <p>
+            Located in Mataasnakahoy, Batangas City,
+            <strong>Pet Corner</strong> is your one-stop-shop for your soon to
+            be pet companion. <br />
+            From our physical store to our online e-store, we take pride in the
+            exclusive collections like top-tier pets and products we bring to
+            the market and the incomparable customer service we provide to our
+            clients every day.
+          </p>
+        </div>
+      </div>
+
+      <!-- Contact Us -->
+      <div class="container-fluid my-5 p-5 contactUs" id="contactus">
+        <div class="row text-center">
+          <h3>Contact Us</h3>
+          <p>
+            <strong>Physical Store Located at: </strong><br />
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30973.346698658657!2d121.10425813322097!3d13.978336592718152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd6d76a09f45ef%3A0xe856fc4abab34554!2sMataas%20Na%20Kahoy%2C%20Batangas!5e0!3m2!1sen!2sph!4v1658221622794!5m2!1sen!2sph"
+              width="300"
+              height="200"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <br />
+            <br />
+            <strong>Telephone: </strong
+            ><a href="tel:123-456-7890">123-456-7890</a><br />
+            <strong>Email : </strong
+            ><a href="mailto:petcorner@mail.com">petcorner@mail.com</a>
+            <br /><br />
+            <strong
+              >Follow us on our social media platform for more details and
+              promotions: </strong
+            ><br />
+            <a
+              class="py-2 px-0 px-lg-2"
+              href="https://www.facebook.com"
+              target="_blank"
+              rel="noopener"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-facebook"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+                />
+              </svg>
+              <small>Facebook</small>
+            </a>
+            <br />
+            <a
+              class="py-2 px-0 px-lg-2"
+              href="https://www.instagram.com"
+              target="_blank"
+              rel="noopener"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-instagram"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+                />
+              </svg>
+              <small>Instagram</small>
+            </a>
+            <br />
+
+            <a
+              class="py-2 px-0 px-lg-2"
+              href="https://www.messenger.com"
+              target="_blank"
+              rel="noopener"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-messenger"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M0 7.76C0 3.301 3.493 0 8 0s8 3.301 8 7.76-3.493 7.76-8 7.76c-.81 0-1.586-.107-2.316-.307a.639.639 0 0 0-.427.03l-1.588.702a.64.64 0 0 1-.898-.566l-.044-1.423a.639.639 0 0 0-.215-.456C.956 12.108 0 10.092 0 7.76zm5.546-1.459-2.35 3.728c-.225.358.214.761.551.506l2.525-1.916a.48.48 0 0 1 .578-.002l1.869 1.402a1.2 1.2 0 0 0 1.735-.32l2.35-3.728c.226-.358-.214-.761-.551-.506L9.728 7.381a.48.48 0 0 1-.578.002L7.281 5.98a1.2 1.2 0 0 0-1.735.32z"
+                />
+              </svg>
+              <small>Messenger</small>
+            </a>
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container-fluid footerarea">
+        <div class="row">
+          <div class="col-md-6 my-3">
+            <h4>Get Subscribed</h4>
+            <p>
+              Subscribe to get the latest information and be the first to know
+              the latest news and promos.
+            </p>
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Email Address"
+              />
+              <div class="input-group-append">
+                <button class="btn btn-dark" type="submit">Subscribe</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 my-3">
+            <h4>Help</h4>
+            <div>
+              <ul>
+                <li><a href="#">FAQs</a></li>
+
+                <li><a href="#">Privacy</a></li>
+
+                <li><a href="#">Terms of Service</a></li>
+
+                <li><a href="#">Affiliated Veterinarians</a></li>
+
+                <li><a href="#">Affiliated Pet Clinics</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="copyright">&copy; Pet Corner 2022</p>
+    </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
