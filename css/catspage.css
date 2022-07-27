@@ -11,6 +11,7 @@ header {
 }
 h2 {
   padding-top: 30px;
+  font-weight: bold;
 }
 
 h3,
@@ -19,7 +20,7 @@ h5 {
 }
 
 h5 {
-  font-size: 1.25rem;
+  font-size: 1.75rem;
 }
 
 nav {
@@ -45,21 +46,19 @@ nav {
   margin-top: auto;
 }
 
-.longFurCats,
-.shortFurCats {
+.catTypes {
   flex-direction: row;
 }
 
-.longFurCatsImage,
-.shortFurCatsImage {
+.catTypesImage {
   flex-direction: row;
   width: 30%;
   aspect-ratio: 1/1;
+  object-fit: contain;
 }
 
 @media screen and (max-width: 540px) {
-  .longFurCatsImage,
-  .shortFurCatsImage {
+  .catTypesImage {
     flex-direction: row;
     width: 50%;
     aspect-ratio: 1/1;
@@ -71,18 +70,17 @@ nav {
   border-top: 5px solid orangered;
 }
 
-.catPagebg img:hover {
-  transform: scale(1.05);
+.catTypes:hover {
   transition: 0.2s;
+  transform: scale(1.025);
   border: 2px solid black;
   border-radius: 5px;
 }
 
-.copyright {
-  text-align: center;
-  padding: 10px;
-}
-
 .btn:hover {
   background-color: orangered;
+}
+.price {
+  font-size: 1.25rem;
+  color: orangered;
 }

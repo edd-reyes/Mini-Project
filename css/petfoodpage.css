@@ -3,7 +3,6 @@
 }
 
 body {
-  font-family: sans-serif;
   background-color: whitesmoke;
 }
 
@@ -12,21 +11,16 @@ header {
 }
 h2 {
   padding-top: 30px;
-  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
 }
 
 h3,
 h5 {
   font-weight: bold;
-  font-family: "Bebas Neue", cursive;
 }
 
 h5 {
-  font-size: 1.25rem;
-}
-
-p {
-  font-family: "Open Sans", sans-serif;
+  font-size: 1.75rem;
 }
 
 nav {
@@ -60,6 +54,7 @@ nav {
   flex-direction: row;
   width: 30%;
   aspect-ratio: 1/1;
+  object-fit: contain;
 }
 
 @media screen and (max-width: 540px) {
@@ -75,18 +70,17 @@ nav {
   border-top: 5px solid orangered;
 }
 
-.petFoodPagebg img:hover {
-  transform: scale(1.05);
+.petFoods:hover {
   transition: 0.2s;
+  transform: scale(1.025);
   border: 2px solid black;
   border-radius: 5px;
 }
 
-.copyright {
-  text-align: center;
-  padding: 10px;
-}
-
 .btn:hover {
   background-color: orangered;
+}
+.price {
+  font-size: 1.25rem;
+  color: orangered;
 }
