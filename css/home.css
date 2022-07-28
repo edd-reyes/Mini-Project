@@ -62,9 +62,13 @@ nav {
   margin-top: auto;
 }
 
-.aboutUs,
 .contactUs {
   background-color: rgba(230, 230, 230);
+  font-family: sans-serif;
+}
+
+.aboutUs {
+  background-color: white;
   font-family: sans-serif;
 }
 
