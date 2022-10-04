@@ -77,6 +77,16 @@ nav {
   border-top: 5px solid orangered;
 }
 
+footer a {
+text-decoration: none;
+color: black;
+}
+
+footer ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
 .topChoices {
   display: flex;
   flex-wrap: nowrap;
